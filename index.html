@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Period Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+</head>
+
+<body>
+
+    <main>
+        <h1>
+            <p>Period &amp; Ovulation</p>
+            <p>Tracker</p>
+        </h1>
+
+        <section>
+            <h3>Last Period Date:</h3>
+            <div>
+                <select class="dayInput">
+                    <option hidden>Select Day</option>
+                </select>
+
+                <select class="monthInput">
+                    <option hidden>Select Month</option>
+                </select>
+
+                <input type="number" class="yearInput" readonly>
+            </div>
+            <div>
+                <strong>Your Periods Typically Happen Every</strong>
+
+                <select class="happenDays">
+                    <option hidden>Select Distance</option>
+                </select>
+
+                <strong>Days</strong>
+            </div>
+
+            <button class="confirm">Confirm</button>
+        </section>
+
+        <ul class="resultList"></ul>
+    </main>
+
+    <!-- -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

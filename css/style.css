@@ -1,0 +1,122 @@
+/*
+
+Template Name: Period Tracker
+Template Url: https://fate92ma.github.io/Period-Tracker
+Contact Me: fatema131khaled@gmail.com
+
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: system-ui
+}
+
+/* Start Styling */
+
+body {
+    background-image: url('../img/bg.jpg')
+}
+
+h3,
+strong {
+    color: #418484
+}
+
+main {
+    background: #fcced1;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 4px;
+    margin: 100px auto
+}
+
+main h1 {
+    color: #8c5f6b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 4px double;
+    text-align: center
+}
+
+section h3 {
+    margin-bottom: 10px
+}
+
+section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px
+}
+
+section div input,
+section div select,
+section button {
+    outline: 0;
+    padding: 5px;
+    border: 1px solid darkgray;
+    width: 100%
+}
+
+section div .monthInput,
+section div:nth-of-type(2) select {
+    margin: 0 10px
+}
+
+section div:nth-of-type(2) select {
+    width: 140px
+}
+
+section button {
+    margin: auto;
+    display: block;
+    font-size: 18px;
+    cursor: pointer;
+    width: fit-content
+}
+
+ul li {
+    list-style-position: inside;
+    margin-top: 14px
+}
+
+@media (max-width: 550px) {
+    main {
+        width: 94%
+    }
+
+    h3 {
+        text-align: center
+    }
+
+    section div {
+        text-align: center;
+        flex-direction: column
+    }
+
+    section div .monthInput,
+    section div:nth-of-type(2) select {
+        margin: 10px 0
+    }
+
+    section div select,
+    section div input {
+        width: 140px
+    }
+
+}
+
+/* End Styling */
