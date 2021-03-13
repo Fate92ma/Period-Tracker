@@ -41,22 +41,7 @@ for (let i = 1; i <= 12; i++) monthInput.innerHTML += `<option value=${i}>${i}</
 
 /***************************************************************************************************/
 
-// function to check input and print msg if input value is not valid
-function checkInput(field, num, msg) {
-
-    if (field.value > num) {
-
-        alert(`not a valid ${msg}`)
-
-        return false
-
-    }
-
-}
-
-/***************************************************************************************************/
-
-// get full date
+// function to get full date
 function getFullDate() {
 
     // if any of these input is empty
