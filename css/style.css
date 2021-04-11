@@ -27,19 +27,19 @@ body {
 
 h3,
 strong {
-    color: #418484
+    color: #860027
 }
 
 main {
-    background: #fcced1;
-    padding: 15px;
+    background: #FFD4E1;
+    padding: 40px 15px;
     width: fit-content;
     border-radius: 4px;
     margin: 100px auto
 }
 
 main h1 {
-    color: #8c5f6b;
+    color: #BC496B;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,11 +81,19 @@ section div:nth-of-type(2) select {
 }
 
 section button {
+    border: none;
+    background: #BC496B;
+    color: #FFD4E1;
     margin: auto;
     display: block;
     font-size: 18px;
     cursor: pointer;
+    border-radius: 4px;
     width: fit-content
+}
+
+section button:hover {
+    background: #860027
 }
 
 ul li {
