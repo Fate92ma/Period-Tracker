@@ -1,4 +1,5 @@
 // Dom Variables
+
 let yearInput = document.getElementsByClassName("yearInput")[0],
 
     monthInput = document.getElementsByClassName("monthInput")[0],
@@ -19,35 +20,31 @@ let yearInput = document.getElementsByClassName("yearInput")[0],
 
 confirm.addEventListener("click", getFullDate);
 
-/***************************************************************************************************/
-
 // display current year as 'year input value' 
 yearInput.value = new Date().getFullYear();
 
-/***************************************************************************************************/
-
 // 'option' for 'select distance'
-for (let i = 21; i <= 35; i++) happenDays.innerHTML += `<option value=${i}>${i}</option>`
-
-/***************************************************************************************************/
+for (let i = 21; i <= 35; i++) {
+    happenDays.innerHTML += `<option value=${i}>${i}</option>`
+}
 
 // 'option' for 'select day'
-for (let i = 1; i <= 31; i++) dayInput.innerHTML += `<option value=${i}>${i}</option>`
-
-/***************************************************************************************************/
+for (let i = 1; i <= 31; i++) {
+    dayInput.innerHTML += `<option value=${i}>${i}</option>`
+}
 
 // 'option' for 'select month'
-for (let i = 1; i <= 12; i++) monthInput.innerHTML += `<option value=${i}>${i}</option>`
-
-/***************************************************************************************************/
+for (let i = 1; i <= 12; i++) {
+    monthInput.innerHTML += `<option value=${i}>${i}</option>`
+}
 
 // function to get full date
 function getFullDate() {
 
     // if any of these input is empty
-    if (dayInput.value == 'Select Day'
-        || monthInput.value == 'Select Month'
-        || happenDays.value == 'Select Distance') {
+    if (dayInput.value == 'Select Day' ||
+        monthInput.value == 'Select Month' ||
+        happenDays.value == 'Select Distance') {
 
         alert('Please Select All Fields')
 
@@ -99,5 +96,3 @@ function getFullDate() {
     }
 
 }
-
-/***************************************************************************************************/
