@@ -63,11 +63,11 @@ function getFullDate() {
 
         userDate = new Date(year, month, day)
 
-        // calculate ovulation date by add '8 days' to user day
-        let ovulationDays = new Date(userDate.setDate(userDate.getDate() + 8))
+        // calculate ovulation date by add '9 days' to user day
+        let ovulationDays = new Date(userDate.setDate(userDate.getDate() + 9))
 
         // calculate next period date by substract '8 days added to ovulation' + '1 day'
-        let nxtPeriod = new Date(userDate.setDate(userDate.getDate() + Number(distance) - 9))
+        let nxtPeriod = new Date(userDate.setDate(userDate.getDate() + Number(distance) - 10))
 
         // add 'original userDate' to Variable
         let date1 = userDate,
